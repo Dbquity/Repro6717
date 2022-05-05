@@ -7,7 +7,7 @@
         }
 
         private void OnCounterClicked(object sender, EventArgs e) {
-            count++;
+            count = ClassLibrary1.Class1.AddARandomNumber(count);
             CounterLabel.Text = $"Current count: {count}";
 
             SemanticScreenReader.Announce(CounterLabel.Text);
