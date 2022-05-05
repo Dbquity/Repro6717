@@ -1,10 +1,13 @@
 # Repro6717
 
 Before the reference to ClassLibrary1 (3'rd commit in this repo)
-```msbuild MauiApp1 /restore /p:TargetFramework=net6.0-windows10.0.19041```
+
+```msbuild MauiApp1 /restore /p:TargetFramework=net6.0-windows10.0.19041.0```
+
 succeeds.
 
 After depending on the .NET6 class library, it yields:
+
 ```
 Done Building Project "C:\Code\Maui\Repro6717\MauiApp1\MauiApp1.csproj" (Restore target(s)) -- FAILED.
 
